@@ -5,11 +5,12 @@ import {styles} from '../screens/Home';
 
 Icon.loadFont();
 
-class PlayButton extends React.PureComponent {
+class PlayButton extends React.PureComponent<{handlePress: () => void}> {
   render() {
+    const {handlePress} = this.props;
     return (
-      <Pressable style={styles.button}>
-        <Icon name={'caret-forward-outline'} size={30} />
+      <Pressable onPress={() => handlePress()} style={styles.button}>
+        <Icon name={'caret-forward-outline'} size={30} color={'#fff'} />
       </Pressable>
     );
   }

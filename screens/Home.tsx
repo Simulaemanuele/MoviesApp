@@ -220,7 +220,17 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
     width: 50,
     padding: 10,
-    backgroundColor: 'blue',
+    backgroundColor: '#4481FC',
+  },
+  playButton: {
+    position: 'absolute',
+    top: -40,
+    right: 20,
+  },
+  videoModal: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
