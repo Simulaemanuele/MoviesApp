@@ -16,7 +16,7 @@ import {styles} from './Home';
 import placeholderImage from '../assets/images/placeholder.png';
 import PlayButton from '../components/PlayButton';
 import {Pressable} from 'react-native';
-import VideoPlayer from 'react-native-video-controls';
+import Video from '../components/Video';
 
 const Detail = ({route, navigation}: DetailScreenProps) => {
   const movieId = route.params.movieId;
@@ -78,16 +78,12 @@ const Detail = ({route, navigation}: DetailScreenProps) => {
               </Text>
             </View>
           </ScrollView>
-          <Modal animationType={'slide'} visible={modalVisible}>
+          <Modal
+            supportedOrientations={['portrait', 'landscape']}
+            animationType={'slide'}
+            visible={modalVisible}>
             <View style={styles.videoModal}>
-              {/* <Pressable onPress={() => videoShown()}>
-                <Text>{'Hide Modal'}</Text>
-              </Pressable> */}
-              <VideoPlayer
-                onBack={() => videoShown()}
-                navigator={navigation}
-                source={{uri: 'https://vjs.zencdn.net/v/oceans.mp4'}}
-              />
+              <Video onClose={videoShown} />
             </View>
           </Modal>
         </View>

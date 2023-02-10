@@ -24,6 +24,7 @@ class List extends React.PureComponent<ListProps> {
           <FlatList
             data={content}
             renderItem={({item}) => (
+              //@ts-ignore
               <Card navigation={navigation} item={item} />
             )}
             horizontal={true}

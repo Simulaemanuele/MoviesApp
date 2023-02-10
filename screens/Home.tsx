@@ -232,6 +232,16 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  logo: {
+    width: 50,
+    height: 50,
+  },
+  mainNav: {
+    flex: 1,
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    padding: 10,
+  },
 });
 
 export default Home;

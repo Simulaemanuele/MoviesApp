@@ -15,3 +15,6 @@ export type DetailScreenProps = {
     navigation: any
 }
 
+export type VideoComponentProps = {
+    onClose: () => void
+}
