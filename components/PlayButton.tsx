@@ -3,6 +3,8 @@ import {Pressable} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {styles} from '../screens/Home';
 
+Icon.loadFont();
+
 class PlayButton extends React.PureComponent {
   render() {
     return (
