@@ -118,5 +118,8 @@ export const styles = StyleSheet.create({
         flexBasis: "auto",
         flexGrow: 1,
         paddingRight: 8
-    }
+    }, searchItem: {
+        padding: 5
+    },
+    empty: {}
 });

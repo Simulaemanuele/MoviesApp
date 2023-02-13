@@ -53,7 +53,7 @@ export const getMovie = async (id: number | undefined): Promise<GetMovieByIdProp
 };
 
 // Search Movie or Tv by Keyword
-export const searchMovieTv = async (query: string, type: string): Promise<SearchMovieProps & SearchTvProps> => {
+export const searchMovieTv = async (query: string | undefined, type: string): Promise<SearchMovieProps[] & SearchTvProps[]> => {
     const res = await axios.get(
         `${apiUrl}/search/${type}?${apiKey}&query=${query}`,
     );

@@ -5,6 +5,8 @@ import {
   GetMovieByIdProps,
   ResultsMovieProps,
   ResultsTVProps,
+  SearchMovieProps,
+  SearchTvProps,
 } from '../types/response.type';
 
 import placeholderImage from '../assets/images/placeholder.png';
@@ -12,7 +14,11 @@ import placeholderImage from '../assets/images/placeholder.png';
 import {NativeStackNavigatorProps} from '@react-navigation/native-stack/lib/typescript/src/types';
 class Card extends React.PureComponent<{
   navigation: any;
-  item: ResultsMovieProps & ResultsTVProps & GetMovieByIdProps;
+  item: ResultsMovieProps &
+    ResultsTVProps &
+    GetMovieByIdProps &
+    SearchMovieProps &
+    SearchTvProps;
 }> {
   render() {
     const {navigation, item} = this.props;
