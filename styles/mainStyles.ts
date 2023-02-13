@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { dimensions } from "../services/constants";
+import Colors from "../theme/Colors";
 
 
 
@@ -20,8 +21,9 @@ export const styles = StyleSheet.create({
     text: {
         fontSize: 20,
         fontWeight: 'bold',
-        paddingBottom: 20,
-        color: 'black',
+        padding: 10,
+        paddingBottom: 15,
+        color: Colors.black,
     },
     list: {
         marginTop: 25,
@@ -50,14 +52,14 @@ export const styles = StyleSheet.create({
         width: 100,
         top: 10,
         textAlign: 'center',
-        color: 'black',
+        color: Colors.black,
     },
     movieTitle: {
         fontSize: 24,
         fontWeight: 'bold',
         marginTop: 10,
         marginBottom: 10,
-        color: 'black',
+        color: Colors.black,
     },
     genresContainer: {
         flexDirection: 'row',
@@ -80,7 +82,7 @@ export const styles = StyleSheet.create({
         borderRadius: 50,
         width: 50,
         padding: 10,
-        backgroundColor: '#4481FC',
+        backgroundColor: Colors.primary,
     },
     playButton: {
         position: 'absolute',
