@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {TouchableOpacity, Image, Text} from 'react-native';
-import {styles} from '../screens/Home';
+import {styles} from '../styles/mainStyles';
 import {
   GetMovieByIdProps,
   ResultsMovieProps,

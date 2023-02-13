@@ -1,5 +1,6 @@
 import {SliderBox} from 'react-native-image-slider-box';
-import {dimensions, styles} from '../screens/Home';
+import {dimensions} from '../services/constants';
+import {styles} from '../styles/mainStyles';
 
 export const SliderBoxComponent = ({images}) => {
   return (

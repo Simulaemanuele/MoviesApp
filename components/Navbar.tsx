@@ -3,7 +3,7 @@ import {Image} from 'react-native';
 import {Text, SafeAreaView, View, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import movieApp from '../assets/images/movieAppIcon.jpg';
-import {styles} from '../screens/Home';
+import {styles} from '../styles/mainStyles';
 
 class Navbar extends React.PureComponent<{navigation: any; main: boolean}> {
   static defaultProps: {main: false};

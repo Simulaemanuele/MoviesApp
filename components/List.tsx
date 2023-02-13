@@ -1,7 +1,7 @@
 import {NativeStackNavigatorProps} from '@react-navigation/native-stack/lib/typescript/src/types';
 import * as React from 'react';
 import {FlatList, Text, View} from 'react-native';
-import {styles} from '../screens/Home';
+import {styles} from '../styles/mainStyles';
 
 import {ResultsMovieProps, ResultsTVProps} from '../types/response.type';
 import Card from './Card';

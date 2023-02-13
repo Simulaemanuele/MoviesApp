@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Text, View} from 'react-native';
-import {styles} from '../screens/Home';
+import {styles} from '../styles/mainStyles';
 import {ErrorComponentProps} from '../types/generic.types';
 
 const defaultProps = {

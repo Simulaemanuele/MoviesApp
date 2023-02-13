@@ -12,7 +12,7 @@ import dateformat from 'dateformat';
 import {getMovie} from '../services/service';
 import {DetailScreenProps} from '../types/generic.types';
 import {GetMovieByIdProps} from '../types/response.type';
-import {styles} from './Home';
+import {styles} from '../styles/mainStyles';
 import placeholderImage from '../assets/images/placeholder.png';
 import PlayButton from '../components/PlayButton';
 import {Pressable} from 'react-native';

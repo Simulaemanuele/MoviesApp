@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Pressable} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import {styles} from '../screens/Home';
+import {styles} from '../styles/mainStyles';
 
 Icon.loadFont();
 
