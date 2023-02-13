@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { GetMovieByIdProps, ResultsMovieProps } from '../types/response.type';
+import { GetMovieByIdProps, ResultsMovieProps, SearchMovieProps, SearchTvProps } from '../types/response.type';
 
 const apiUrl = "https://api.themoviedb.org/3"
 const apiKey = "api_key=68d27499b77b6f90282688009518c478"
@@ -36,7 +36,7 @@ export const getFamilyMovies = async (): Promise<ResultsMovieProps[]> => {
     return res.data.results;
 };
 
-// Get Family movies from Api
+// Get Documentary movies from Api
 export const getDocumentaryMovies = async (): Promise<ResultsMovieProps[]> => {
     const res = await axios.get(
         `${apiUrl}/discover/movie?${apiKey}&with_genres=99`,
@@ -50,4 +50,12 @@ export const getMovie = async (id: number | undefined): Promise<GetMovieByIdProp
         `${apiUrl}/movie/${id}?${apiKey}`,
     );
     return res.data;
+};
+
+// Search Movie or Tv by Keyword
+export const searchMovieTv = async (query: string, type: string): Promise<SearchMovieProps & SearchTvProps> => {
+    const res = await axios.get(
+        `${apiUrl}/search/${type}?${apiKey}&query=${query}`,
+    );
+    return res.data.results;
 };

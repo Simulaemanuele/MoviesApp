@@ -102,4 +102,21 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         padding: 10,
     },
+    input: {
+        borderRadius: 15,
+        borderWidth: 0.5,
+        height: 50,
+        padding: 8
+    },
+    searchContainer: {
+        padding: 10,
+        paddingTop: 60,
+        flexDirection: "row",
+        alignItems: "center",
+    },
+    form: {
+        flexBasis: "auto",
+        flexGrow: 1,
+        paddingRight: 8
+    }
 });
